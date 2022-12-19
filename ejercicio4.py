@@ -10,8 +10,9 @@ sym2=Symbol('sym1')
 
 
 def do_math(n):
-    #ordenar alfabeticamente
-
+    #ordenar alfabeticamente una lista
+    
+    
     for i in n:
         if i in ascii_lowercase:
             n.pop(i)
