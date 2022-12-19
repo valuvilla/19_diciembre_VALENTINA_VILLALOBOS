@@ -19,7 +19,7 @@ def ecuacion():
     return sympify(ecuacion)
 
 #probamos el codigo
-print(ecuacion())
+# print(ecuacion())
 
 
 def symplify():
