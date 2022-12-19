@@ -1,3 +1,5 @@
+#https://github.com/valuvilla/19_diciembre_VALENTINA_VILLALOBOS.git
+
 
 def hollow_triangle ( n ): # n es el numero de filas de la piramide
     for i in range(1,n+1):
