@@ -10,6 +10,7 @@ def hollow_triangle ( n ): # n es el numero de filas de la piramide
         else:
             print('#'*(2*i-1))
 
-hollow_triangle(5)
+if __name__=='__main__':
+    hollow_triangle(n=int(input('Ingrese el numero: ')))
 
  #'_____#_____', '____#_#____', '___#___#___', '__#_____#__', '_#_______#_', '###########']
