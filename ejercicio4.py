@@ -1,3 +1,4 @@
+from ast import main
 from string import ascii_lowercase
 from sympy import Symbol, sympify, solve, pprint
 
@@ -10,7 +11,7 @@ sym2=Symbol('sym1')
 
 def do_math(n):
     #ordenar alfabeticamente
-    
+
     for i in n:
         if i in ascii_lowercase:
             n.pop(i)
@@ -19,3 +20,6 @@ def do_math(n):
        
         
 do_math(n=input('Ingrese la ecuacion: '))
+
+if __name__=='__main__':
+   main()

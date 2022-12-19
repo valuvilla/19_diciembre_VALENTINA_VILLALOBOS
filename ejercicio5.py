@@ -12,5 +12,3 @@ def hollow_triangle ( n ): # n es el numero de filas de la piramide
 
 if __name__=='__main__':
     hollow_triangle(n=int(input('Ingrese el numero: ')))
-
- #'_____#_____', '____#_#____', '___#___#___', '__#_____#__', '_#_______#_', '###########']

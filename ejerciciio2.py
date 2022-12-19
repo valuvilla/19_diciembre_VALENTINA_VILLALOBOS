@@ -1,3 +1,4 @@
+from ast import main
 from sympy import sympify, solve, Symbol, pprint
 
 from string import ascii_lowercase
@@ -17,4 +18,8 @@ def ecuacion():
     ecuacion.replace('**','^')
     return sympify(ecuacion)
 
+#probamos el codigo
 print(ecuacion())
+
+if __name__=='__main__':
+   main()
