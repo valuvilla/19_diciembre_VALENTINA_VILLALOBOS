@@ -11,7 +11,7 @@ def ecuacion():
     ecuacion = (input('Introduzca la ecuacion: '))
     for i in ecuacion:
         if i in sym2:
-            ecuacion=ecuacion.replace(i,'sym2')
+            i=Symbol(i)
     ecuacion.replace('','*')
     ecuacion.replace('**','^')
     return sympify(ecuacion)
