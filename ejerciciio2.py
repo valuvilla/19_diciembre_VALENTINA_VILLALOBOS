@@ -9,8 +9,9 @@ sym2=Symbol('sym1')
 
 def ecuacion():
     ecuacion = (input('Introduzca la ecuacion: '))
+    ecuacion.split()
     for i in ecuacion:
-        if i in sym2:
+        if i in ascii_lowercase:
             i=Symbol(i)
     ecuacion.replace('','*')
     ecuacion.replace('**','^')

@@ -1,15 +1,15 @@
 
-def Tribonnaci(*args, n):
-    for i in range(n):
-        if n == 1:
-            return args[0]
-        elif n == 2:
-            return args[1]
-        elif n == 3:
-            return args[2]
-        else:
-            for i in range(3, n):
-                args[i]=Tribonnaci(*args, n=i-1) + Tribonnaci(*args, n=i-2) + Tribonnaci(*args, n=i-3)
-    return args
 
-print(Tribonnaci(1,2,3, n=5))
+
+
+def Tribonnaci(*args, n):
+    lista=[]
+    for i in range(len(args)):
+        lista.append(args[i])
+
+    for i in range(3,n+1):
+        lista[i]=sum(((lista[::-1])[0:3]))
+        lista.append(lista[i+3])
+    return lista
+
+print(Tribonnaci(1,2,3, n=3))
