@@ -21,5 +21,15 @@ def ecuacion():
 #probamos el codigo
 print(ecuacion())
 
+
+def symplify():
+    ecuacion = (input('Introduzca la ecuacion: '))
+    sympify(ecuacion)
+
+#probamos el codigo
+print(symplify())
+
 if __name__=='__main__':
    main()
+
+
