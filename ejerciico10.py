@@ -8,7 +8,8 @@ def Tribonnaci(*args, n):
         elif n == 3:
             return args[2]
         else:
-            args[i]=Tribonnaci(*args, n=i-1) + Tribonnaci(*args, n=i-2) + Tribonnaci(*args, n=i-3)
+            for i in range(3, n):
+                args[i]=Tribonnaci(*args, n=i-1) + Tribonnaci(*args, n=i-2) + Tribonnaci(*args, n=i-3)
     return args
 
 print(Tribonnaci(1,2,3, n=5))
